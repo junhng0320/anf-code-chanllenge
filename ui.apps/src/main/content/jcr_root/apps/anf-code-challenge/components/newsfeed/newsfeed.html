@@ -1,0 +1,37 @@
+<sly data-sly-use.feed="com.anf.core.models.NewsFeed"
+	data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+	data-sly-test="${feed.articles.size > 0}">
+<div class="news-feed__cmp">
+	<section class="recentNews">
+		<div class="container">
+			<div class="row">
+				<div class="newsfeed" data-sly-repeat.article="${feed.articles}">
+					<div class="ct-blog col-sm-6 col-md-4">
+						<div class="inner">
+							<div class="fauxcrop">
+								<a href="${article.url}"><img alt="${article.title}"
+									src="${article.urlImage}"></a>
+								<div class="note">Note: ${article.description @ context='html'}</div>
+							</div>
+							<div class="ct-blog-content">
+								<div class="ct-blog-date">
+									<span>${article.date}</span>
+								</div>
+								<h3 class="ct-blog-header">${article.title}</h3>
+							</div>
+							<div class="author">by : ${article.author}</div>
+							
+							<br>
+							<div>${article.content @ context='html'}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+</div>
+</sly>
+<sly
+	data-sly-call="${template.placeholder @ isEmpty=!feed.articles.size > 0, classAppend='cmp-news-feed'}">
+</sly>

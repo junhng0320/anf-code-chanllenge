@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-07-27T21:29:55.339+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/anf-code-challenge/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Exercise 2"
+        sling:resourceType="anf-code-challenge/components/page"
+        pageCreated="true">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="anf-code-challenge/components/container">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="anf-code-challenge/components/container">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="anf-code-challenge/components/title"/>
+                <container
+                    jcr:lastModified="{Date}2022-07-27T18:08:18.350+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="anf-code-challenge/components/container"
+                    id="exercise_2"
+                    layout="responsiveGrid">
+                    <container
+                        jcr:created="{Date}2022-07-27T17:07:28.033+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-07-27T17:08:13.757+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="anf-code-challenge/components/form/container"
+                        action="/content/usergenerated/anf-code-challenge/us/exercise-1/cq-gen1656329848051/"
+                        actionType="commerce/components/actions/submitorder">
+                     <newsfeed
+                     	jcr:created="{Date}2022-07-27T17:07:28.033+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-07-27T17:08:13.757+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="anf-code-challenge/components/news-feed"                       
+                     />  
+                    </container>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
